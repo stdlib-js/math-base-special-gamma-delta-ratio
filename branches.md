@@ -38,12 +38,12 @@ C -->|bundle| D[esm];
 C -->|bundle| E[deno];
 C -->|bundle| F[umd];
 
-click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/special/gamma-delta-ratio"
-click B href "https://github.com/stdlib-js/math-base-special-gamma-delta-ratio/tree/main"
-click C href "https://github.com/stdlib-js/math-base-special-gamma-delta-ratio/tree/production"
-click D href "https://github.com/stdlib-js/math-base-special-gamma-delta-ratio/tree/esm"
-click E href "https://github.com/stdlib-js/math-base-special-gamma-delta-ratio/tree/deno"
-click F href "https://github.com/stdlib-js/math-base-special-gamma-delta-ratio/tree/umd"
+%% click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/special/gamma-delta-ratio"
+%% click B href "https://github.com/stdlib-js/math-base-special-gamma-delta-ratio/tree/main"
+%% click C href "https://github.com/stdlib-js/math-base-special-gamma-delta-ratio/tree/production"
+%% click D href "https://github.com/stdlib-js/math-base-special-gamma-delta-ratio/tree/esm"
+%% click E href "https://github.com/stdlib-js/math-base-special-gamma-delta-ratio/tree/deno"
+%% click F href "https://github.com/stdlib-js/math-base-special-gamma-delta-ratio/tree/umd"
 ```
 
 [stdlib-url]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/special/gamma-delta-ratio

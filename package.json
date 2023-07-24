@@ -47,7 +47,8 @@
     "@stdlib/math-base-special-gamma": "^0.0.6",
     "@stdlib/math-base-special-gamma-lanczos-sum": "^0.0.7",
     "@stdlib/math-base-special-log1p": "^0.0.6",
-    "@stdlib/math-base-special-pow": "^0.0.7"
+    "@stdlib/math-base-special-pow": "^0.0.7",
+    "@stdlib/error-tools-fmtprodmsg": "^0.0.2"
   },
   "devDependencies": {
     "@stdlib/bench": "^0.0.12",

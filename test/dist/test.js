@@ -29,12 +29,12 @@ var gammaDeltaRatio = require( './../../dist' );
 
 // FIXTURES //
 
-var decimalsIntegers = require( './../..xtures/cpp/decimals_integers.json' );
-var largeIntegers = require( './../..xtures/cpp/large_integers.json' );
-var smallIntegers = require( './../..xtures/cpp/small_integers.json' );
-var largeTiny = require( './../..xtures/cpp/large_tiny.json' );
-var tinyLarge = require( './../..xtures/cpp/tiny_large.json' );
-var decimals = require( './../..xtures/cpp/decimals.json' );
+var decimalsIntegers = require( './../fixtures/cpp/decimals_integers.json' );
+var largeIntegers = require( './../fixtures/cpp/large_integers.json' );
+var smallIntegers = require( './../fixtures/cpp/small_integers.json' );
+var largeTiny = require( './../fixtures/cpp/large_tiny.json' );
+var tinyLarge = require( './../fixtures/cpp/tiny_large.json' );
+var decimals = require( './../fixtures/cpp/decimals.json' );
 
 
 // TESTS //

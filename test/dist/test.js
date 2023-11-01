@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,184 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var isnan = require( '@stdlib/math-base-assert-is-nan' );
-var abs = require( '@stdlib/math-base-special-abs' );
-var EPS = require( '@stdlib/constants-float64-eps' );
-var gammaDeltaRatio = require( './../../dist' );
-
-
-// FIXTURES //
-
-var decimalsIntegers = require( './../fixtures/cpp/decimals_integers.json' );
-var largeIntegers = require( './../fixtures/cpp/large_integers.json' );
-var smallIntegers = require( './../fixtures/cpp/small_integers.json' );
-var largeTiny = require( './../fixtures/cpp/large_tiny.json' );
-var tinyLarge = require( './../fixtures/cpp/tiny_large.json' );
-var decimals = require( './../fixtures/cpp/decimals.json' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof gammaDeltaRatio, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns `NaN` if provided `NaN` for either parameter', function test( t ) {
-	var v;
-
-	v = gammaDeltaRatio( NaN, 5.0 );
-	t.equal( isnan( v ), true, 'returns NaN' );
-
-	v = gammaDeltaRatio( 1.0, NaN );
-	t.equal( isnan( v ), true, 'returns NaN' );
-
-	v = gammaDeltaRatio( NaN, NaN );
-	t.equal( isnan( v ), true, 'returns NaN' );
-
-	t.end();
-});
-
-tape( 'the function returns `0` for very large `z` and negligible `delta`', function test( t ) {
-	var v;
-
-	v = gammaDeltaRatio( 1.0e100, 20.7 );
-	t.equal( v, 0.0, 'returns 0' );
-
-	v = gammaDeltaRatio( 1.0e120, 100.1 );
-	t.equal( v, 0.0, 'returns 0' );
-
-	t.end();
-});
-
-tape( 'the function evaluates the ratio of two gamma functions (decimals)', function test( t ) {
-	var expected;
-	var delta;
-	var diff;
-	var tol;
-	var v;
-	var i;
-	var z;
-
-	z = decimals.z;
-	diff = decimals.delta;
-	expected = decimals.expected;
-	for ( i = 0; i < z.length; i++ ) {
-		v = gammaDeltaRatio( z[ i ], diff[ i ] );
-		delta = abs( v - expected[ i ] );
-		tol = 350.0 * EPS * abs( expected[ i ] );
-		t.ok( delta <= tol, 'within tolerance. z: '+z[i]+'. delta: '+diff[i]+'. v: '+v+'. E: '+expected[i]+'. Δ: '+delta+'. tol: '+tol );
-	}
-	t.end();
-});
-
-tape( 'the function evaluates the ratio of two gamma functions (small integers)', function test( t ) {
-	var expected;
-	var delta;
-	var diff;
-	var tol;
-	var v;
-	var i;
-	var z;
-
-	z = smallIntegers.z;
-	diff = smallIntegers.delta;
-	expected = smallIntegers.expected;
-	for ( i = 0; i < z.length; i++ ) {
-		v = gammaDeltaRatio( z[ i ], diff[ i ] );
-		delta = abs( v - expected[ i ] );
-		tol = 10.0 * EPS * abs( expected[ i ] );
-		t.ok( delta <= tol, 'within tolerance. z: '+z[i]+'. delta: '+diff[i]+'. v: '+v+'. E: '+expected[i]+'. Δ: '+delta+'. tol: '+tol );
-	}
-	t.end();
-});
-
-tape( 'the function evaluates the ratio of two gamma functions (large integers)', function test( t ) {
-	var expected;
-	var delta;
-	var diff;
-	var tol;
-	var v;
-	var i;
-	var z;
-
-	z = largeIntegers.z;
-	diff = largeIntegers.delta;
-	expected = largeIntegers.expected;
-	for ( i = 0; i < z.length; i++ ) {
-		v = gammaDeltaRatio( z[ i ], diff[ i ] );
-		delta = abs( v - expected[ i ] );
-		tol = 150.0 * EPS * abs( expected[ i ] );
-		t.ok( delta <= tol, 'within tolerance. z: '+z[i]+'. delta: '+diff[i]+'. v: '+v+'. E: '+expected[i]+'. Δ: '+delta+'. tol: '+tol );
-	}
-	t.end();
-});
-
-tape( 'the function evaluates the ratio of two gamma functions (non-integer `z`, integer `delta`)', function test( t ) {
-	var expected;
-	var delta;
-	var diff;
-	var tol;
-	var v;
-	var i;
-	var z;
-
-	z = decimalsIntegers.z;
-	diff = decimalsIntegers.delta;
-	expected = decimalsIntegers.expected;
-	for ( i = 0; i < z.length; i++ ) {
-		v = gammaDeltaRatio( z[ i ], diff[ i ] );
-		delta = abs( v - expected[ i ] );
-		tol = 150.0 * EPS * abs( expected[ i ] );
-		t.ok( delta <= tol, 'within tolerance. z: '+z[i]+'. delta: '+diff[i]+'. v: '+v+'. E: '+expected[i]+'. Δ: '+delta+'. tol: '+tol );
-	}
-	t.end();
-});
-
-tape( 'the function evaluates the ratio of two gamma functions (tiny `z`, large `delta`)', function test( t ) {
-	var expected;
-	var delta;
-	var diff;
-	var tol;
-	var v;
-	var i;
-	var z;
-
-	z = tinyLarge.z;
-	diff = tinyLarge.delta;
-	expected = tinyLarge.expected;
-	for ( i = 0; i < z.length; i++ ) {
-		v = gammaDeltaRatio( z[ i ], diff[ i ] );
-		delta = abs( v - expected[ i ] );
-		tol = 100.0 * EPS * abs( expected[ i ] );
-
-		// Handle cases where either the expected value is zero or `v` is zero and the expected value is very small...
-		if ( tol < 1.0e-300 ) {
-			tol = 1.0e-300;
-		}
-		t.ok( delta <= tol, 'within tolerance. z: '+z[i]+'. delta: '+diff[i]+'. v: '+v+'. E: '+expected[i]+'. Δ: '+delta+'. tol: '+tol );
-	}
-	t.end();
-});
-
-tape( 'the function evaluates the ratio of two gamma functions (large `z`, tiny `delta`)', function test( t ) {
-	var expected;
-	var delta;
-	var diff;
-	var tol;
-	var v;
-	var i;
-	var z;
-
-	z = largeTiny.z;
-	diff = largeTiny.delta;
-	expected = largeTiny.expected;
-	for ( i = 0; i < z.length; i++ ) {
-		v = gammaDeltaRatio( z[ i ], diff[ i ] );
-		delta = abs( v - expected[ i ] );
-		tol = 1.0 * EPS * abs( expected[ i ] );
-		t.ok( delta <= tol, 'within tolerance. z: '+z[i]+'. delta: '+diff[i]+'. v: '+v+'. E: '+expected[i]+'. Δ: '+delta+'. tol: '+tol );
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });

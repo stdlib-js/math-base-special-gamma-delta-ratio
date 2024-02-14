@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import gammaDeltaRatio from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma-delta-ratio@deno/mod.js';
+import gammaDeltaRatio from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma-delta-ratio@v0.2.0-deno/mod.js';
 ```
 
 #### gammaDeltaRatio( z, delta )
@@ -72,7 +72,7 @@ y = gammaDeltaRatio( 100.0, 0.0 );
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import gammaDeltaRatio from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma-delta-ratio@deno/mod.js';
+import gammaDeltaRatio from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma-delta-ratio@v0.2.0-deno/mod.js';
 
 var delta;
 var z;

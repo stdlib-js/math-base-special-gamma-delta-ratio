@@ -41,12 +41,12 @@
     "@stdlib/constants-float64-eps": "^0.2.1",
     "@stdlib/constants-float64-gamma-lanczos-g": "^0.2.1",
     "@stdlib/math-base-special-abs": "^0.2.1",
-    "@stdlib/math-base-special-exp": "^0.2.2",
+    "@stdlib/math-base-special-exp": "^0.2.3",
     "@stdlib/math-base-special-factorial": "^0.2.1",
     "@stdlib/math-base-special-floor": "^0.2.2",
     "@stdlib/math-base-special-gamma": "^0.2.1",
     "@stdlib/math-base-special-gamma-lanczos-sum": "^0.2.1",
-    "@stdlib/math-base-special-log1p": "^0.2.1",
+    "@stdlib/math-base-special-log1p": "^0.2.2",
     "@stdlib/math-base-special-pow": "^0.2.1"
   },
   "devDependencies": {

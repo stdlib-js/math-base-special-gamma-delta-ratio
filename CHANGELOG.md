@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`252286d`](https://github.com/stdlib-js/stdlib/commit/252286d5d3357112ff718f0e3dc5ae758836efd3) - **bench:** remove irrelevant benchmark, update `boost` link in `math/base/special/gamma-delta-ratio` _(by Gunj Joshi)_
 -   [`3985f47`](https://github.com/stdlib-js/stdlib/commit/3985f47c6ec78cc644a98aa916740a1b2d37338f) - **feat:** add C implementation for `math/base/special/gamma-delta-ratio` _(by Gunj Joshi, Athan Reines, Philipp Burckhardt)_
 
 </details>

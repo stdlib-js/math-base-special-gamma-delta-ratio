@@ -5,5 +5,4 @@ var F=require('@stdlib/math-base-special-abs/dist'),p=require('@stdlib/math-base
 });var b=I();module.exports=b;
 /** @license Apache-2.0 */
 /** @license Apache-2.0 */
-/** @license Apache-2.0 */
 //# sourceMappingURL=index.js.map

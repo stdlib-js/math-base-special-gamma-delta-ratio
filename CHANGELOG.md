@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-30)
+## Unreleased (2025-02-08)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`58e26cb`](https://github.com/stdlib-js/stdlib/commit/58e26cbf1882734b423124a001180661a6c377bb) - **chore:** fix parameter names, return annotations, and example code _(by Philipp Burckhardt)_
 -   [`09853ce`](https://github.com/stdlib-js/stdlib/commit/09853ce60a535feb4a8f45620dc557cddda38fba) - **chore:** update package meta data [(#2807)](https://github.com/stdlib-js/stdlib/pull/2807) _(by stdlib-bot, Athan Reines)_
 -   [`6a3b3d7`](https://github.com/stdlib-js/stdlib/commit/6a3b3d731ca697a62e3d58900e1b6cb06e7667dd) - **chore:** update directories meta data _(by Athan Reines)_
 -   [`252286d`](https://github.com/stdlib-js/stdlib/commit/252286d5d3357112ff718f0e3dc5ae758836efd3) - **bench:** remove irrelevant benchmark, update `boost` link in `math/base/special/gamma-delta-ratio` _(by Gunj Joshi)_

@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-24)
+## Unreleased (2025-04-01)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`a1e230f`](https://github.com/stdlib-js/stdlib/commit/a1e230f29297caa89880e9c194c615a0400fb7bc) - **chore:** clean up cppcheck-suppress comments _(by Karan Anand)_
 -   [`876aac6`](https://github.com/stdlib-js/stdlib/commit/876aac65e39f884b6e8be5788b5eca8f99742572) - **bench:** update random value generation [(#6330)](https://github.com/stdlib-js/stdlib/pull/6330) _(by Harsh)_
 -   [`58e26cb`](https://github.com/stdlib-js/stdlib/commit/58e26cbf1882734b423124a001180661a6c377bb) - **chore:** fix parameter names, return annotations, and example code _(by Philipp Burckhardt)_
 -   [`09853ce`](https://github.com/stdlib-js/stdlib/commit/09853ce60a535feb4a8f45620dc557cddda38fba) - **chore:** update package meta data [(#2807)](https://github.com/stdlib-js/stdlib/pull/2807) _(by stdlib-bot, Athan Reines)_
@@ -39,11 +40,12 @@
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Gunj Joshi
 -   Harsh
+-   Karan Anand
 -   Philipp Burckhardt
 
 </section>

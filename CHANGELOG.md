@@ -2,9 +2,9 @@
 
 > Package changelog.
 
-<section class="release" id="unreleased">
+<section class="release" id="v0.3.0">
 
-## Unreleased (2025-08-22)
+## 0.3.0 (2026-01-30)
 
 <section class="features">
 
@@ -34,10 +34,10 @@
 
 -   [`44010b3`](https://github.com/stdlib-js/stdlib/commit/44010b3e8509ab22c32750fa125a1155f5fd8995) - **docs:** fix return annotation values _(by Philipp Burckhardt)_
 -   [`0d53bc8`](https://github.com/stdlib-js/stdlib/commit/0d53bc83d3e0bc958aa43d6bf8759e36a586b9cb) - **fix:** correct imports to use `max-nth-factorial` constant _(by Karan Anand)_
--   [`cae9a13`](https://github.com/stdlib-js/stdlib/commit/cae9a136511539fae4e92823d912e27dfbedfe6d) - **docs:** replace manual `for` loop in examples [(#6635)](https://github.com/stdlib-js/stdlib/pull/6635) _(by Harsh)_
+-   [`cae9a13`](https://github.com/stdlib-js/stdlib/commit/cae9a136511539fae4e92823d912e27dfbedfe6d) - **docs:** replace manual `for` loop in examples [(#6635)](https://github.com/stdlib-js/stdlib/pull/6635) _(by Harsh Yadav)_
 -   [`630ddb7`](https://github.com/stdlib-js/stdlib/commit/630ddb777824b5f6e501fda6dadf4ce41dccb964) - **test:** replace equal with strictEqual _(by Karan Anand)_
 -   [`a1e230f`](https://github.com/stdlib-js/stdlib/commit/a1e230f29297caa89880e9c194c615a0400fb7bc) - **chore:** clean up cppcheck-suppress comments _(by Karan Anand)_
--   [`876aac6`](https://github.com/stdlib-js/stdlib/commit/876aac65e39f884b6e8be5788b5eca8f99742572) - **bench:** update random value generation [(#6330)](https://github.com/stdlib-js/stdlib/pull/6330) _(by Harsh)_
+-   [`876aac6`](https://github.com/stdlib-js/stdlib/commit/876aac65e39f884b6e8be5788b5eca8f99742572) - **bench:** update random value generation [(#6330)](https://github.com/stdlib-js/stdlib/pull/6330) _(by Harsh Yadav)_
 -   [`58e26cb`](https://github.com/stdlib-js/stdlib/commit/58e26cbf1882734b423124a001180661a6c377bb) - **chore:** fix parameter names, return annotations, and example code _(by Philipp Burckhardt)_
 -   [`09853ce`](https://github.com/stdlib-js/stdlib/commit/09853ce60a535feb4a8f45620dc557cddda38fba) - **chore:** update package meta data [(#2807)](https://github.com/stdlib-js/stdlib/pull/2807) _(by stdlib-bot, Athan Reines)_
 -   [`6a3b3d7`](https://github.com/stdlib-js/stdlib/commit/6a3b3d731ca697a62e3d58900e1b6cb06e7667dd) - **chore:** update directories meta data _(by Athan Reines)_
@@ -58,7 +58,7 @@ A total of 5 people contributed to this release. Thank you to the following cont
 
 -   Athan Reines
 -   Gunj Joshi
--   Harsh
+-   Harsh Yadav
 -   Karan Anand
 -   Philipp Burckhardt
 

@@ -44,7 +44,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-gammaDeltaRatio = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma-delta-ratio@umd/browser.js' )
+gammaDeltaRatio = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma-delta-ratio@v0.3.1-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -56,7 +56,7 @@ var gammaDeltaRatio = require( 'path/to/vendor/umd/math-base-special-gamma-delta
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma-delta-ratio@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma-delta-ratio@v0.3.1-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -100,7 +100,7 @@ y = gammaDeltaRatio( 100.0, 0.0 );
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma-delta-ratio@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma-delta-ratio@v0.3.1-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 

@@ -35,6 +35,22 @@ limitations under the License.
 
 > Compute the ratio of two [gamma][@stdlib/math/base/special/gamma] functions.
 
+<section class="intro">
+
+The function computes the ratio of two [gamma functions][gamma-function]
+
+<!-- <equation class="equation" label="eq:gamma_delta_ratio" align="center" raw="y = \frac{\Gamma(x)}{\Gamma(x + \delta)}" alt="Ratio of two gamma functions"> -->
+
+```math
+y = \frac{\Gamma(x)}{\Gamma(x + \delta)}
+```
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="installation">
 
 ## Installation
@@ -284,6 +300,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/math-base-special-gamma-delta-ratio/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-special-gamma-delta-ratio/main/LICENSE
+
+[gamma-function]: https://en.wikipedia.org/wiki/Gamma_function
 
 <!-- <related-links> -->
 

@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-27)
+## Unreleased (2026-08-28)
 
 <section class="commits">
 
@@ -12,6 +12,8 @@
 
 <details>
 
+-   [`e67a5aa`](https://github.com/stdlib-js/stdlib/commit/e67a5aad659d8f6623e4ab8ac94687a8586ea83a) - **docs:** update Markdown equation elements _(by stdlib-bot)_
+-   [`85f4853`](https://github.com/stdlib-js/stdlib/commit/85f48534ef6908bbcd982d48f1c5fbea3fb7aafd) - **docs:** update Markdown equation SVGs _(by stdlib-bot)_
 -   [`795a5dc`](https://github.com/stdlib-js/stdlib/commit/795a5dc8faad670819a5151bcf249176dbdac6b4) - **docs:** add equations [(#14690)](https://github.com/stdlib-js/stdlib/pull/14690) _(by Karan Anand)_
 -   [`59c9969`](https://github.com/stdlib-js/stdlib/commit/59c9969a580e74428505ba91634607f110ec71bf) - **bench:** refactor to use string interpolation in `math/base/special` [(#11388)](https://github.com/stdlib-js/stdlib/pull/11388) _(by Karan Anand)_
 -   [`92eeeed`](https://github.com/stdlib-js/stdlib/commit/92eeeed8deec15caf3cda6b5989316d95ed2d130) - **test:** migrate `math/base/special/gamma-delta-ratio` to ulp based testing [(#11565)](https://github.com/stdlib-js/stdlib/pull/11565) _(by Nirmal Jyoti Biswas)_
